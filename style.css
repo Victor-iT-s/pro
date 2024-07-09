@@ -1,0 +1,599 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(50, 51, 53);
+    width: 100%;
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 188, 62);
+}
+.header {
+    margin: 30px;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid rgb(255, 188, 62);
+}
+.tel {
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.parts {
+    display: inline-flex;
+    gap: 20px;
+}
+.sety {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+.pin {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+.one {
+    background-image: url('images/pintr.png');
+}
+.two {
+    background-image: url('images/whatsapp.png');
+}
+.three {
+    background-image: url('images/tg.png');
+}
+.name {
+    margin-top: 40px;
+    font-size: 65px;
+    letter-spacing: 2px;
+    color: rgb(255, 188, 62);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.dop_name {
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+.info_text {
+    font-size: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+
+/* Стили для кнопки */
+.but {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 100px;
+    border: none;
+    border-radius: 10px;
+    /* padding: 5px 20px; */
+    background: linear-gradient(120deg, rgb(255, 188, 62), rgb(223, 145, 0)); /* Градиентный фон кнопки для объемного эффекта */
+    color: #fff; /* Белый цвет текста на кнопке */
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    font-size: 20px;
+    padding: 20px; /* Отступы внутри кнопки */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Стили для создания блика на кнопке */
+  .but:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%, /* Прозрачность начала блика */
+      rgba(255, 255, 255, 0.8), /* Цвет блика */
+      rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 2s infinite linear; /* Анимация блика */
+  }
+  
+  /* Ключевые кадры для анимации блика */
+  @keyframes shine {
+    0% {
+      left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+    }
+    20% {
+      left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+    }
+    100% {
+      left: 100%; /* Завершение анимации */
+    }
+  }
+
+
+.pro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+	position: relative;
+	height: 520px;
+	width: 80%;
+	background: url('images/1.jpg') 0px 0px no-repeat;
+	background-size: cover;
+
+    border-radius: 20px;
+    border: 1px double rgb(255, 188, 62);
+}
+/* .pro:before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, .5);
+} */
+.own {
+    padding: 20px;
+    border-radius: 10px;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.name_pro {
+    color: rgb(223, 145, 0);
+    color: white;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-weight: 900;
+}
+.but_pro {
+    background: linear-gradient(120deg, rgb(255, 188, 62), rgb(223, 145, 0)); /* Градиентный фон кнопки для объемного эффекта */
+    color: #fff;
+    font-size: 20px;
+    padding: 20px; /* Отступы внутри кнопки */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px;
+    text-align: center;
+}
+.block_about_she {
+    width: 80%;
+    margin: 0 auto;
+}
+.flex {
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    /* width: 80%; */
+}
+.img_she {
+    width: 35%;
+    height: 300px;
+    background-size: cover;
+    background-image: url('images/21.jpg');
+    border-radius: 25% 25% 0% 0%;
+}
+.first {
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.second {
+    margin-top: 40px;
+    font-size: 30px;
+    color: rgb(255, 188, 62);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.third {
+    text-align: right;
+    margin-top: 25px;
+    font-family: cursive;
+}
+.go {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80%;
+}
+.name_of {
+    font-size: 30px;
+    margin-top: 30px;
+    color: rgb(255, 188, 62);
+    letter-spacing: 2px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.grid {
+    /* margin: 0 auto;
+    width: 80%; */
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 15px;
+}
+.etap {
+    border: 2px solid rgb(255, 188, 62);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.str {
+    display: flex;
+    gap: 20px;
+    color: rgb(255, 188, 62);
+    align-items: center;
+}
+.number {
+    font-size: 30px;
+    font-family: fantasy;
+}
+.num_info {
+    font-size: 20px;
+    font-family: monospace;
+}
+.image {
+    background: url('images/1.jpg') 0px 0px no-repeat;
+	background-size: cover;
+}
+.text_of {
+    letter-spacing: 2px;
+}
+.grid_2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.consult {
+    margin: 0 auto;
+    margin-top: 100px;
+    /* border: 3px solid rgb(255, 188, 62); */
+    border-radius: 30px;
+    padding: 25px;
+    width: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    background-color: rgb(64, 66, 68);
+}
+.fir_text {
+    font-size: 33px;
+    font-family: cursive;
+    text-align: center;
+
+}
+.sec_text {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.but {
+    margin-top: 40px;
+    color: #fff;
+}
+.doing {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.dop_flex {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    gap: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tarif {
+    padding: 20px;
+    background-color: rgb(255, 188, 62);
+    color: black;
+    width: 40%;
+}
+.tarif_name {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.dop_text {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+.design {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+}
+.price {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    font-weight: 900;
+}
+.answers {
+    margin-top: 100px;
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+.heading-primary {
+    color: rgb(50, 51, 53);
+}
+.contacts {
+    margin: 0 auto;
+    background-color: #fff;
+    color: black;
+    width: 100%;
+    padding-bottom: 100px;
+}
+.cont {
+    display: inline-flex;
+    justify-content: space-around; 
+    width: 100%;
+    
+    margin-top: 50px;
+}
+.inside {
+    width: 70%;
+    margin: 0 auto;
+}
+.ex {
+    margin-top: 0;
+    text-align: center;
+    color: black;
+}
+.text_name {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.sv {
+    margin-top: 10px;
+}
+.sv a {
+    color: black;
+    font-weight: 900;
+}
+.foo {
+    margin-bottom: 10px;
+}
+form {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(255, 188, 62);
+    box-sizing: border-box;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 0;
+    width: 100%;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(255, 188, 62);
+    outline:none;
+}
+.sub {
+    padding: 10px;
+    background: linear-gradient(120deg, rgb(249, 162, 2), rgb(165, 108, 1));
+}
+footer {
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ico {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/55.png');
+    background-size: cover;
+}
+.ico_block {
+    display: inline-flex;
+    gap: 10px;
+    font-size: 25px;
+    color: rgb(255, 188, 62);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+
+.head {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 1100px) { 
+    .block_about_she {
+        width: 95%;
+    }
+    .pro {
+        width: 95%;
+    }
+    .go {
+        width: 95%;
+    }
+    .consult {
+        width: 85%;
+    }
+    .inside {
+        width: 95%;
+    }
+  }
+  @media (max-width: 900px) { 
+    .flex {
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .img_she {
+        width: 80%;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .info {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .dop_flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tarif {
+        width: 95%;
+    }
+  }
+
+  @media (max-width: 800px) { 
+    .menu {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .sety {
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .dop_name {
+        font-size: 30px;
+    }
+    .info_text {
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 680px) { 
+    .img_she {
+        width: 100%;
+        height: 380px;
+    }
+    .info {
+        width: 100%;
+    }
+    .container {
+        width: 95%;
+    }
+    .cont {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .foot {
+        justify-content: start;
+    }
+  }
+
+    @media (max-width: 580px) {  
+        .header {
+            margin: 10px;
+            padding: 10px;
+        }
+        .dop_name {
+            font-size: 25px;
+        }
+        .info_text {
+            font-size: 17px;
+        }
+        .pro {
+            height: 400px;
+        }
+        .grid {
+            grid-template-columns: 1fr;
+        }
+        .image {
+            width: 100%;
+            height: 300px;
+        }
+  }
+  @media (max-width: 440px) { 
+    .parts {
+        display: none;
+    }
+    .sety {
+        margin-top: 10px;
+    }
+    .pro {
+        height: 300px;
+    }
+    .img_she {
+        height: 250px;
+    }
+    .third {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    .name_pro {
+        font-size: 22px;
+    }
+    .consult {
+        width: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+    .but {
+        padding: 10px;
+        width: 250px;
+        box-sizing: border-box;
+    }
+    .fir_text {
+        font-size: 20px;
+    }
+    .sec_text {
+        font-size: 14px;
+    }
+    .name {
+        font-size: 45px;
+    }
+    .dop_name {
+        font-size: 20px;
+    }
+    .info_text {
+        font-size: 14px;
+    }
+    .tarif {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .dop_flex {
+        width: 100%;
+    }
+    .doing {
+        width: 95%;
+    }
+  }
+
+.first {
+    font-family: cursive;
+}
