@@ -566,6 +566,7 @@ footer {
         padding: 10px;
         width: 250px;
         box-sizing: border-box;
+	
     }
     .fir_text {
         font-size: 20px;
@@ -591,6 +592,13 @@ footer {
     }
     .doing {
         width: 95%;
+    }
+ .head {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    footer {
+        padding: 20px;
     }
   }
 
